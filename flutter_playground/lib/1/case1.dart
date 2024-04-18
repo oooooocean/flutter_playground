@@ -51,7 +51,6 @@ class _Case1State extends State<Case1> with SingleTickerProviderStateMixin {
           .width;
 
   _onHorizontalDragUpdate(DragUpdateDetails details) {
-    print(offsetFactor.value + details.delta.dx);
     offsetFactor.value = clampDouble(offsetFactor.value + details.delta.dx, 0, _width);
   }
 
